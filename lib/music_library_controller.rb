@@ -76,7 +76,8 @@ class MusicLibraryController
         # Song.all.sort{|indexed_song_obj| indexed_song_obj[[input-1]] }
         song = Song.all.sort{|a, b| a.name <=> b.name}[input-1]
 
-        puts "Playing #{song.name} by #{song.artist.name}"
+        puts "Playing #{song.name} by #{song.artist.name}" if song
+
       end
 
   end
