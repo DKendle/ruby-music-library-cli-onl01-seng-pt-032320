@@ -75,7 +75,7 @@ class MusicLibraryController
         end
     # binding.pry
 
-    puts "Playing #{song.name} by #{song.artist.name}" if song
+    # puts "Playing #{song.name} by #{song.artist.name}" if song
   end
 
 end
