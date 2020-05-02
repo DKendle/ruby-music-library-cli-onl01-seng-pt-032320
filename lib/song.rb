@@ -18,13 +18,13 @@ class Song
 
   def artist=(artist_obj)
 
-    # if @artist == nil
+     if @artist == nil
       @artist = artist_obj
-    #end
-    # if self.artist != nil
+      end
+    if self.artist != nil
       @artist.add_song(self)
-    # end
-    # @artist
+    end
+    @artist
   end
 
 
