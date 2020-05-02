@@ -76,7 +76,7 @@ class MusicLibraryController
     end
 
 
-      binding.pry
+      #binding.pry
 
   end
 
