@@ -69,7 +69,7 @@ class MusicLibraryController
     binding.pry
       puts "Which song number would you like to play?"
       self.list_songs
-      input = gets.strip.to_i
+      input = gets.chomp.to_i
 
 
       if (input > 0) && (input <= self.list_songs.length)
