@@ -40,7 +40,7 @@ class MusicLibraryController
         puts "#{i}. #{artist.name}"
       end
 
-  
+
     end
 
 
