@@ -70,10 +70,9 @@ class MusicLibraryController
       self.list_songs
       input = gets.strip.to_i
 
-      if (input > 0) && input <= self.list_songs.length
-        self.list_songs.find{|song_index| song_index == (input -1)}
-      
-      end
+      ## check if input matches number on list_songs 
+      ## if match, puts "Playing #{song.name} by #{song.artist}"
+      ##else, puts -nothing-
       puts "Playing #{song.name} by #{song.artist}"
     end
 
