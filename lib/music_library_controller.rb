@@ -73,7 +73,7 @@ class MusicLibraryController
       ## check if input matches number on list_songs
       ## if match, puts "Playing #{song.name} by #{song.artist.name}"
       ##else, puts -nothing-
-      puts "Playing #{song.name} by #{song.artist}"
+      puts "Playing #{song.name} by #{song.artist.name}"
     end
 
   # def play_song
