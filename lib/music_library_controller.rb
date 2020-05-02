@@ -72,10 +72,12 @@ class MusicLibraryController
       input = gets.chomp.to_i
 
 
-      # if (input > 0) && (input <= self.list_songs.length)
-      #   self.list_songs.find{|indexed_song_obj| indexed_song_obj[[input-1]] }
-      #   puts "Playing #{song.name} by #{song.artist.name}"
-      # end
+      if (input > 0) && (input <= Song.all.length)
+        # Song.all.sort{|indexed_song_obj| indexed_song_obj[[input-1]] }
+        puts "Playing #{song.name} by #{song.artist.name}"
+      end
 
   end
+
+  
 end
