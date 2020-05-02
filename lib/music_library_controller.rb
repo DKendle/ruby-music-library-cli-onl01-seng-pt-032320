@@ -74,7 +74,7 @@ class MusicLibraryController
       if (input > 0) && (input <= self.list_songs.length)
         self.list_songs.find{|indexed_songs| indexed_songs[input-1] }
     # list_of_songs =  Song.all.sort{ |a, b| a.name <=> b.name }
-    # 
+    #
     # input = gets.strip.to_i
     # if (1..Song.all.length).include?(input)
     #   song = list_of_songs[input+2]
