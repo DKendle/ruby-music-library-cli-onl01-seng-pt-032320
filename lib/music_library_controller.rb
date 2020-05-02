@@ -72,6 +72,7 @@ class MusicLibraryController
       songs = Song.all
       if [1..songs.length].include?(input)
       self.list_songs
+    end
   end
 
 
