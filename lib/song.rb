@@ -54,7 +54,7 @@ class Song
       @@all << song_obj
     end
     song_obj
-binding.pry
+
   end
 
  # def self.find_by_name(song_name)
