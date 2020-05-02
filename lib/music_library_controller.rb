@@ -74,8 +74,8 @@ class MusicLibraryController
       song = list_songs[input+2]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
-        
-        
+
+
       binding.pry
 
   end
