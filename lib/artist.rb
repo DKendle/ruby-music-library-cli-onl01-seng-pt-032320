@@ -60,7 +60,7 @@ class Artist
   #     @@all << song_obj
   #   end
   #   song_obj
-  # 
+  #
   # end
 
 
