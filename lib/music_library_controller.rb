@@ -76,7 +76,7 @@ class MusicLibraryController
         song = list_of_songs[input+2]
         puts "Playing #{song.name} by #{song.artist.name}"
       elsif !(1..Song.all.length).include?(input))
-        puts 
+        puts
       else
       end
     end
