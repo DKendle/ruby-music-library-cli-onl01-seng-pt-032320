@@ -29,7 +29,9 @@ class Genre
 
   def self.create(genre_name)
     genre_obj = Genre.new(genre_name)
-    @@all << self
+      if !(@@all.include?(genre_obj))
+        @@all << self
+      end
     genre_obj
   end
 
