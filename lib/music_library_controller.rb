@@ -52,8 +52,10 @@ class MusicLibraryController
         puts "#{i}. #{song.name} - #{song.genre.name}"
       end
     end
-    ##takes input and pulls all songs by artist in numbered list
-    ##puts that list
+  end
+
+  def list_songs_by_genre
+    puts "Please enter the name of a genre:"
   end
 
 
