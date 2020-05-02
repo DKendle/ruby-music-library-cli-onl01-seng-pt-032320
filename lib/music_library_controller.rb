@@ -29,6 +29,18 @@ class MusicLibraryController
       Song.all.sort {|a,b| a.name <=> b.name}.uniq.each.with_index(1) do |song, i|
         puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
+
+    def list_artist
+      #prints all artists in the music library in a numbered list (alphabetized by artist name
+      songs_sorted_by_artist = Artist.all.sort_by do |artist| #returns an array of artists sorted by artist name
+        artist.name
+      end
+      
+      songs_sorted_by_artist.each.with_index(1) do |artist,index|
+        puts "#{index}. #{artist.name}"
+      end
+  
+  
   end
 
 
