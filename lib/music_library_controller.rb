@@ -71,7 +71,7 @@ class MusicLibraryController
     input = gets.chomp.to_i
       songs = Song.all
       if [1..songs.length].include?(input)
-      self.list_songs
+        list_songs.find(input)
     end
   end
 
