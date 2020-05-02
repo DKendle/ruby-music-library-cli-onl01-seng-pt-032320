@@ -74,6 +74,7 @@ class MusicLibraryController
         self.list_songs.find{|song_index| song_index == (input -1)}
         puts "Playing #{song.name} by #{song.artist}"
       end
+      puts "Playing #{song.name} by #{song.artist}"
     end
 
   # def play_song
