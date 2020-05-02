@@ -31,15 +31,7 @@ class MusicLibraryController
     end
 
     def list_artist
-      #prints all artists in the music library in a numbered list (alphabetized by artist name
-      songs_sorted_by_artist = Artist.all.sort_by do |artist| #returns an array of artists sorted by artist name
-        artist.name
-      end
-
-      songs_sorted_by_artist.uniq.each.with_index(1) do |artist,i|
-        puts "#{i}. #{artist.name}"
-      end
-
+      
 
     end
 
