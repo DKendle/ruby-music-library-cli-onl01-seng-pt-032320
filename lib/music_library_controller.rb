@@ -36,12 +36,12 @@ class MusicLibraryController
         artist.name
       end
 
-      songs_sorted_by_artist.each.with_index(1) do |artist,index|
-        puts "#{index}. #{artist.name}"
+      songs_sorted_by_artist.uniq.each.with_index(1) do |artist,i|
+        puts "#{i}. #{artist.name}"
       end
 
   
-  end
+    end
 
 
 end
