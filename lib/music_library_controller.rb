@@ -72,6 +72,7 @@ class MusicLibraryController
 
       if (input > 0) && input <= self.list_songs.length
         self.list_songs.find{|song_index| song_index == (input -1)}
+        puts "Playing #{song.name} by #{song.artist}"
       end
     end
 
