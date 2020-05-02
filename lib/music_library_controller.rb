@@ -70,8 +70,8 @@ class MusicLibraryController
       self.list_songs
       input = gets.strip.to_i
 
-      ## check if input matches number on list_songs 
-      ## if match, puts "Playing #{song.name} by #{song.artist}"
+      ## check if input matches number on list_songs
+      ## if match, puts "Playing #{song.name} by #{song.artist.name}"
       ##else, puts -nothing-
       puts "Playing #{song.name} by #{song.artist}"
     end
