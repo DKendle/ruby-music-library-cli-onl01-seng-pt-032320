@@ -73,7 +73,7 @@ class MusicLibraryController
 
 
       if (input > 0) && (input <= self.list_songs.length)
-        self.list_songs.find{|indexed_song_obj| indexed_song_obj[song.name[input-1]] }
+        self.list_songs.find{|indexed_song_obj| indexed_song_obj[[input-1]] }
         puts "Playing #{song.name} by #{song.artist.name}"
       end
 
