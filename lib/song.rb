@@ -50,9 +50,9 @@ class Song
 
   def self.create(song_name)
     song_obj = Song.new(song_name)
-    # if !(@@all.include?(song_obj))
+    if !(@@all.include?(song_obj))
      song_obj.save
-    # end
+    end
     song_obj
 
   end
