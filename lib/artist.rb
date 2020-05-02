@@ -49,10 +49,19 @@ class Artist
   def self.create(artist_name)
 
     artist_obj = Artist.new(artist_name)
-    @@all << artist_obj
+      if !(@@all.include?(artist_obj))
+        @@all << artist_obj
+      end
     artist_obj
-
   end
+  # def self.create(song_name)
+  #   song_obj = Song.new(song_name)
+  #   if !(@@all.include?(song_obj))
+  #     @@all << song_obj
+  #   end
+  #   song_obj
+  # 
+  # end
 
 
 end
