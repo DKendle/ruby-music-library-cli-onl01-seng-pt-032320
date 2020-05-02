@@ -72,7 +72,7 @@ class MusicLibraryController
       input = gets.chomp.to_i
       binding.pry
       if (1..Song.all.length).include?(input)
-        song = list_of_songs
+        song = list_of_songs[input-1]
         puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
