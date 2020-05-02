@@ -66,6 +66,7 @@ class MusicLibraryController
 
 
   def play_song
+    binding.pry
       puts "Which song number would you like to play?"
       self.list_songs
       input = gets.strip.to_i
@@ -75,6 +76,6 @@ class MusicLibraryController
         self.list_songs.find{|indexed_songs| indexed_songs[input-1] }
         puts "Playing #{song.name} by #{song.artist.name}"
       end
-  
+
   end
 end
