@@ -87,7 +87,7 @@ class MusicLibraryController
       #self.list_songs
       input = gets.chomp.to_i
       self.list_songs{|song_obj| song_obj[input-1]}
-binding.pry
+#binding.pry
       # if (input > 0) && (input <= Song.all.length)
         # Song.all.sort{|indexed_song_obj| indexed_song_obj[[input-1]] }
         # song = Song.all.sort{|a, b| a.name <=> b.name}[input-1]
