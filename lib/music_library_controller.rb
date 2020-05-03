@@ -103,7 +103,7 @@ class MusicLibraryController
           #if (input > 0) && (input <= list_of_songs.size)
           #if (input >= 1) && (input <= list_of_songs.size)
           if (1..Song.all.length).include?(input)
-            song = list_of_songs[input+2]
+            song = list_of_songs[input]
             puts "Playing #{song.name} by #{song.artist.name}"
           else
           end
