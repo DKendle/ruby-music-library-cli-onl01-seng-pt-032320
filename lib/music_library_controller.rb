@@ -89,7 +89,7 @@ class MusicLibraryController
       listed_songs = Song.all.sort {|a,b| a.name <=> b.name}.uniq.each.with_index(1)
 
       listed_songs{|song_obj| song_obj[input-1]}
-binding.pry
+#binding.pry
       # if (input > 0) && (input <= Song.all.length)
         # Song.all.sort{|indexed_song_obj| indexed_song_obj[[input-1]] }
         # song = Song.all.sort{|a, b| a.name <=> b.name}[input-1]
